@@ -1,0 +1,25 @@
+{
+	"name": "Vinhetas!",
+	"description": "A Google Chrome extension!",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": [
+		"contextMenus",
+		"notifications",
+		"storage"
+	],
+	"background": {
+	  "service_worker": "background.js"
+	},
+	"action": {
+	  "default_popup": "popup.html",
+	  "default_icon": {
+		"48": "/images/icons8-sound-100.png",
+		"128": "/images/icons8-sound-100.png"
+	  }
+	},
+	"icons": {
+		"48": "/images/icons8-sound-100.png",
+		"128": "/images/icons8-sound-100.png"
+	}
+}
