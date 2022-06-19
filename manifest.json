@@ -1,25 +1,24 @@
 {
-	"name": "Vinhetas!",
-	"description": "A Google Chrome extension!",
-	"version": "1.0",
-	"manifest_version": 3,
+	"manifest_version": 2,
+  
+	"name": "XKCD 1625 Replacements",
+	"description": "This extension makes news articles more fun using a variation on the suggestions in XKCD 1625.",
+	"version": "0.1",
 	"permissions": [
-		"contextMenus",
-		"notifications",
-		"storage"
+	  "tabs", "http://*/*", "https://*/", "activeTab"
 	],
+  
 	"background": {
-	  "service_worker": "background.js"
+	  "scripts": ["background.js"],
+	  "persistent": false
 	},
-	"action": {
-	  "default_popup": "popup.html",
+	"incognito": "spanning",
+	"browser_action": {
+	  "default_title": "Make this page fun!",
 	  "default_icon": {
-		"48": "/images/icons8-sound-100.png",
-		"128": "/images/icons8-sound-100.png"
+		"19": "images/icons8-newspaper-100.png",
+		"38": "images/icons8-newspaper-100.png",
+		"128": "images/icons8-newspaper-100.png"
 	  }
-	},
-	"icons": {
-		"48": "/images/icons8-sound-100.png",
-		"128": "/images/icons8-sound-100.png"
 	}
-}
+  }
