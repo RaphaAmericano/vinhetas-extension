@@ -40,6 +40,10 @@ const marcelo = document.getElementById('marcelo-button')
 const fluminense = document.getElementById('fluminense-button')
 const beto = document.getElementById('beto-carreiro-button')
 const ibagem = document.getElementById('ibagem-button')
+const gugu = document.getElementById('gugu-button');
+const peao = document.getElementById('peao-button');
+const praca = document.getElementById('praca-button');
+const arquivox = document.getElementById('arquivo-x')
 
 brazil.addEventListener('click', () => {
 	const audio = new Audio('https://www.myinstants.com/media/sounds/efeitos-sonoros-brasil-sil-sil-rede-globo.mp3')
@@ -86,3 +90,19 @@ ibagem.addEventListener('click', () => {
 	const audio = new Audio('https://www.myinstants.com/media/sounds/datena_2.mp3');
 	audio.play();
 });
+gugu.addEventListener('click', () => {
+	const audio = new Audio('https://www.myinstants.com/media/sounds/que-que-isso-gugu.mp3');
+	audio.play();
+});
+peao.addEventListener('click', () => {
+	const audio = new Audio('https://www.myinstants.com/media/sounds/peao.mp3');
+	audio.play();
+});
+praca.addEventListener('click', () => {
+	const audio = new Audio('https://www.myinstants.com/media/sounds/a-mesma-praca_1.mp3');
+	audio.play();
+});
+arquivox.addEventListener('click', () => {
+	const audio = new Audio('https://www.myinstants.com/media/sounds/xfiles-theme.mp3');
+	audio.play();
+})
